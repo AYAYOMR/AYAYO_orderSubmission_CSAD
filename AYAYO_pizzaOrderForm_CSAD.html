@@ -1,0 +1,300 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ORDER FORM</title>
+    <style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+	</style>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="AYAYO_IMAGES_CSAD/style.css">
+    <!--AYAYO, MOIRA RENEE-->
+    <!--04.D.2021-->
+	<img src="AYAYO_IMAGES_CSAD/logo.png" style="width:200px; float:left; margin-left: 200px; margin-right: 50px; margin-bottom: 20px; display:inline-block;"><br>
+	<h1 style="text-align: left; color: #534666; font-size: 50px; margin: 10px auto; font-family: Poppins;">WELCOME TO AYRA COOKS!</h1>
+	<p style="text-align: left;  color: #534666; font-size: 20px; margin: 5px auto; font-family: Poppins;">Where there is good food and great vibes.</p>
+	<table>
+		<form>
+			<thead>
+				<th colspan="8" style="font-size: 28px;">CUSTOMER INFORMATION</th>	
+			</thead>
+			<tbody>
+				<tr>
+					<th class="left"><label for="fullname">Full Name:</label></th>
+					<td colspan="7">
+						<input type="text" name="fullname" id="fname" size="30" placeholder="First Name" maxlength="50" required>
+							<input type="text" name="fullname" id="sname" size="30" placeholder="Last Name" maxlength="50" required>
+					</td>
+				</tr>
+				
+				<tr>
+					<th class="left"><label for="address">Address:</label></th>
+						<td colspan="7"><input type="text" name="address" id="street1" size="30" placeholder="Street Address" maxlength="50" required>
+							<input type="text" name="address" id="street2" size="30" placeholder="Street Address Line 2" maxlength="50"><br>
+							<input type="text" name="address" id="city" size="30" placeholder="City" maxlength="50" required>
+							<input type="text" name="address" id="zipcode" size="30" placeholder="Postal/Zip Code" maxlength="50" required>
+						</td>
+				</tr>
+				
+				<tr>
+					<th class="left"><label for="phone">Phone Number:</label></th>
+						<td colspan="7"><input type="text" name="phone" id="phone" size="1" value="+63" disabled>
+						<input type="tel" name="phone" id="phone" size="20" maxlength="10" placeholder="Phone Number" required>
+						</td>
+				</tr>
+				<tr>
+					<th class="left"><label for="email">Email:</label></th>
+					<td colspan="7"><input type="email" name="email" id="email" size="25" placeholder="ex: myname@example.com"></td>
+				</tr>
+				<tr>
+					<th class="left"><label for="description" style="center;">Description of how to get to the place</label></th>
+						<td colspan="7"><textarea rows="5" cols="80" placeholder="Enter here.." required></textarea>
+						</td>
+				</tr>
+				
+				<tr>
+					<th colspan="8" style="font-size: 28px; text-align:center;">ORDER FORM</th>
+				</tr>
+				<tr>
+					<th colspan="8" style="font-size: 25px; text-align:center;"><label for="burger">Meet your meat!</label></th>
+				</tr>
+
+				<tr>
+					<td>
+						<h2 style="color: #534666; font-size: 20px; margin: 5px 47px;">SINGLE BURGER</h2>
+						<img src="AYAYO_IMAGES_CSAD/single.png" style="width: 250px;"><br>
+					</td>
+					<td colspan="7">
+						<input type="checkbox" id="patty1" name="patty1" value="single patty">
+						<label for="patty1"><b>Single Patty</b></label><br><br>
+						<b>CHOOSE YOUR GARNISH:</b><br>
+						<input type="checkbox" id="single1" name="single1" value="Cheese1">
+								<label for="single1">Cheese</label></br>
+						<input type="checkbox" id="single2" name="single2" value="Coleslaw1">
+								<label for="single2">Coleslaw</label></br>
+						<input type="checkbox" id="single3" name="single3" value="Tomato1">
+								<label for="single3">Tomato</label></br>
+						<input type="checkbox" id="single4" name="single4" value="Onion1">
+								<label for="single4">Onion</label></br>
+						<input type="checkbox" id="single5" name="single5" value="Cucumber1">
+								<label for="single5">Cucumber</label></br>
+						<input type="checkbox" id="single6" name="single6" value="Bacon1">
+								<label for="single6">Bacon</label></br>
+						
+						<p><b>CHOOSE YOUR BUNS:</b></p>
+						<input type="radio" id="swhite" name="swhite" value="WhiteBun1">
+								<label for="swhite">White Bun</label><br><br>					
+						<input type="radio" id="swheat" name="swheat" value="WheatBun1">
+								<label for="swheat">Wheat Bun</label><br><br>
+						<label for="quantityburger1"><b>QUANTITY:</b></label>
+							<input type="number" id="quantityburger1" name="quantityburger1" min="1" max="20">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h2 style="color: #534666; font-size: 20px; margin: 5px 42px;">DOUBLE BURGER</h2>
+						<img src="AYAYO_IMAGES_CSAD/double.jpg" style="width: 250px;"><br>
+					</td>							
+					<td colspan="7">
+						<input type="checkbox" id="patty2" name="patty2" value="double patty">
+						<label for="patty2"><b>Double Patty</b></label><br><br>
+						<b>CHOOSE YOUR GARNISH:</b><br>
+						<input type="checkbox" id="double1" name="double1" value="Cheese2">
+								<label for="double1">Cheese</label></br>
+						<input type="checkbox" id="double2" name="double2" value="Coleslaw2">
+								<label for="double2">Coleslaw</label></br>
+						<input type="checkbox" id="double3" name="double3" value="Tomato2">
+								<label for="double3">Tomato</label></br>
+						<input type="checkbox" id="double4" name="double4" value="Onion2">
+								<label for="double4">Onion</label></br>
+						<input type="checkbox" id="double5" name="double5" value="Cucumber2">
+								<label for="double5">Cucumber</label></br>
+						<input type="checkbox" id="double6" name="double6" value="Bacon2">
+								<label for="double6">Bacon</label></br>
+						
+						<p><b>CHOOSE YOUR BUNS:</b></p>
+						<input type="radio" id="dwhite" name="dwhite" value="WhiteBun2">
+								<label for="dwhite">White Bun</label><br><br>					
+						<input type="radio" id="dwheat" name="dwheat" value="WheatBun2">
+								<label for="dwheat">Wheat Bun</label><br><br>
+						<label for="quantityburger2"><b>QUANTITY:</b></label>
+							<input type="number" id="quantityburger2" name="quantityburger2" min="1" max="20">
+					</td>
+				</tr>
+				<tr>
+					<th colspan="8" style="font-size: 25px;"><label for="pasta">We got lotsa pasta!</label></th>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="sauce1" name="sauce1" value="Carbonara">
+							<label for="sauce1"><b>Carbonara</b></label><br>
+							<img src="AYAYO_IMAGES_CSAD/carbo.png" style="width: 250px;	padding: 10px; margin: auto;">
+
+						<label><b>ADD ONS:</b></label><br>
+						<input type="checkbox" id="cextra1" name="cextra1" value="Extra Sauce">
+								<label for="cextra1">Extra Sauce</label>
+						<input type="checkbox" id="cextra2" name="cextra2" value="Extra Cheese"> 
+								<label for="cextra2">Extra Cheese</label> <br>
+						<input type="checkbox" id="cextra3" name="cextra3" value="Extra Meat"> 
+								<label for="cextra3">Extra Meat</label> <br><br>
+						<label for="quantity1"><b>Quantity</b> (perbox):</label>
+							<input type="number" id="quantity1" name="quantity1" min="1" max="20">
+					</td>
+	
+					<td>
+						<input type="checkbox" id="sauce2" name="sauce2" value="Pesto">
+							<label for="sauce2"><b>Pesto</b></label><br>
+							<img src="AYAYO_IMAGES_CSAD/pesto.png" style="width: 250px;	padding: 10px; margin: auto;">
+
+						<label><b>ADD ONS:</b></label><br>
+						<input type="checkbox" id="pextra1" name="pextra1" value="Extra Sauce">
+								<label for="pextra1">Extra Sauce</label>
+						<input type="checkbox" id="pextra2" name="pextra2" value="Extra Cheese"> 
+								<label for="pextra2">Extra Cheese</label> <br>
+						<input type="checkbox" id="pextra3" name="pextra3" value="Extra Meat"> 
+								<label for="pextra3">Extra Meat</label> <br><br>
+						<label for="quantity2"><b>Quantity</b> (perbox):</label>
+							<input type="number" id="quantity2" name="quantity2" min="1" max="20">
+					</td>
+
+					<td colspan="6">
+						<input type="checkbox" id="sauce3" name="sauce3" value="Spaghetti">
+								<label for="sauce3"><b>Spaghetti</b></label><br>
+								<img src="AYAYO_IMAGES_CSAD/spag.png" style="width: 250px; padding: 10px; margin: auto;"><br>
+
+						<label><b>ADD ONS:</b></label><br>
+						<input type="checkbox" id="sextra1" name="sextra1" value="Extra Sauce">
+								<label for="sextra1">Extra Sauce</label>
+						<input type="checkbox" id="sextra2" name="sextra2" value="Extra Cheese"> 
+								<label for="sextra2">Extra Cheese</label> <br>
+						<input type="checkbox" id="sextra3" name="sextra3" value="Extra Meat"> 
+								<label for="sextra3">Extra Meat</label> <br><br>
+						<label for="quantity"><b>Quantity</b> (perbox):</label>
+							<input type="number" id="quantity3" name="quantity3" min="1" max="20">
+					</td>
+				</tr>
+				
+				<tr>
+					<th colspan="8" style="font-size: 25px; text-align:center;"><label for="fries">Keep your friends close and your fries closer.</label></th>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="fries1" name="fries1" value="Cheese">
+							<label for="fries1"><b>Cheese</b></label><br>
+							<img src="AYAYO_IMAGES_CSAD/cheese.png" style="width: 250px; padding: 20px; margin: auto;"><br>
+						<label><b>SIZE:</b></label>
+						<select id="sizecheese">
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+						</select>
+						<br>
+						<label for="fquantity1"><b>Quantity:</b></label>
+							<input type="number" id="fquantity1" name="fquantity1" min="1" max="20">
+					</td>
+
+					<td>
+						<input type="checkbox" id="fries2" name="fries2" value="Barbeque">
+								<label for="fries2"><b>Barbeque</b></label>
+								<img src="AYAYO_IMAGES_CSAD/bbq.png" style="width: 250px; padding: 20px; margin: auto;"><br>
+						<label><b>SIZE:</b></label>
+						<select id="sizebbq">
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+						</select>
+						<br>
+						<label for="fquantity2"><b>Quantity:</b></label>
+							<input type="number" id="fquantity2" name="fquantity2" min="1" max="20">
+					</td>
+					<td colspan="6">
+						<input type="checkbox" id="fries3" name="fries3" value="SourCream">
+								<label for="fries3"><b>Sour Cream</b></label>
+								<img src="AYAYO_IMAGES_CSAD/sourcream.png" style="width: 250px; padding: 20px; margin: auto;"><br>
+						<label><b>SIZE:</b></label>
+						<select id="sizesc">
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+						</select>
+						<br>
+						<label for="fquantity3"><b>Quantity:</b></label>
+							<input type="number" id="fquantity3" name="fquantity3" min="1" max="20">
+					</td>
+				</tr>
+				
+				<tr>
+					<th colspan="8" style="font-size: 25px; text-align:center;"><label for="drinks">Fizz it up!</label></th>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="drinks1" name="drinks1" value="Coke">
+								<label for="drinks1"><b>Coke</b></label><br>
+								<img src="AYAYO_IMAGES_CSAD/coke.png" style="width: 110px; padding: 20px 20px; margin: 0 50px;"><br>
+						<label><b>SIZE:</b></label>
+						<select id="sizecoke">
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+						</select>
+						<br>
+						<label for="dquantity1"><b>Quantity:</b></label>
+							<input type="number" id="dquantity1" name="dquantity1" min="1" max="20">
+					</td>
+
+					<td>
+						<input type="checkbox" id="drinks2" name="drinks2" value="Royal">
+								<label for="drinks2"><b>Royal</b></label><br>
+								<img src="AYAYO_IMAGES_CSAD/royal.png" style="width: 250px; padding: 20px; margin: auto;"><br>
+						<label><b>SIZE:</b></label>
+						<select id="sizeroyal">
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+						</select>
+						<br>
+						<label for="dquantity2"><b>Quantity:</b></label>
+							<input type="number" id="dquantity2" name="dquantity2" min="1" max="20">
+					</td>
+
+					<td colspan="6">
+						<input type="checkbox" id="drinks3" name="drinks3" value="Sprite">
+								<label for="drinks3"><b>Sprite</b></label><br>
+								<img src="AYAYO_IMAGES_CSAD/sprite.png" style="width: 200px; padding: 20px; margin: auto;"><br>
+						<label><b>SIZE:</b></label>
+						<select id="sizesprite">
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+						</select>
+						<br>
+						<label for="dquantity3"><b>Quantity:</b></label>
+							<input type="number" id="dquantity3" name="dquantity3" min="1" max="20">
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:left; font-weight:bold;"><label for="description">Kindly please leave a feedback for us to improve our form.</label></td>
+						<td colspan="7"><textarea rows="5" cols="80" required></textarea></td>
+				</tr>
+				
+				<tr>
+					<th style="font-size: 25px; text-align:center;"><label for="delivery">DELIVERY</label></th>
+					
+					<td colspan="7">
+						<input type="radio" id="delivery" name="deliver" value="Delivery">
+							<label for="delivery">Delivery</label> <br><br>
+						<input type="radio" id="pick-up" name="deliver" value="Pick-up">
+							<label for="pick-up">Pick-up</label>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th colspan="8"><input type="submit" id="btn1" value="PLACE ORDER"></th>
+				</tr>
+			</tfoot>
+		</form>
+	</table>
+</body>
+</html>
